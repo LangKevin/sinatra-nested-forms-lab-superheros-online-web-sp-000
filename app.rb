@@ -11,7 +11,7 @@ require './environment'
        erb :'pirates/new'
      end
      post '/teams' do
-       @pirate = Pirate.new(params[:pirate])
+       @team = Team.new(params[:team])
        params[:pirate][:ships].each do |details|
          Ship.new(details)
        end
