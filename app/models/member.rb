@@ -1,16 +1,16 @@
 class Member
   attr_reader :name, :power, :bio
 
-  @@TEAMS = []
+  @@MEMBERS = []
 
   def initialize(params)
     @name = params[:name]
     @motto = params[:power]
     @bio = params[:bio]
-    @@TEAMS << self
+    @@MEMBERS << self
   end
 
   def self.all
-    @@TEAMS
+    @@MEMBERS
   end
 end
