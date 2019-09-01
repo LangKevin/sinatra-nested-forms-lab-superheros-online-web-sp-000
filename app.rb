@@ -12,10 +12,10 @@ require './environment'
      end
      post '/teams' do
        @team = Team.new(params[:team])
-       params[:pirate][:ships].each do |details|
-         Ship.new(details)
+       params[:team][:member].each do |details|
+         Member.new(details)
        end
-       @ships = Ship.all
+       @members = Member.all
 
        erb :'team'
      end
