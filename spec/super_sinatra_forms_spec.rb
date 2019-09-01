@@ -30,10 +30,10 @@ describe App do
       fill_in("member3_power", :with => "Sinatra")
       fill_in("member3_bio", :with => "I love Sinatra!")
       click_button 'submit'
-
+binding.pry
       expect(page).to have_text("Team Ruby")
       expect(page).to have_text("Team Motto: We love Ruby!")
-binding.pry
+
       expect(page).to have_text("Hero Name: Amanda")
       expect(page).to have_text("Hero Power: Ruby")
       expect(page).to have_text("Hero Biography: I love Ruby!")
