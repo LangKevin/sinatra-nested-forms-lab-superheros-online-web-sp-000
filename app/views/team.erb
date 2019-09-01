@@ -3,16 +3,15 @@
 <h1>Pirates</h1>
 
 <div class="pirate">
-<h3>Name: <%= @pirate.name %></h3><br>
-<h4>Weight: <%= @pirate.weight %></h4>
-<h4>Height: <%= @pirate.height %></h4>
+<h3>Name: <%= @team.name %></h3><br>
+<h4>Motto: <%= @team.motto %></h4>
 </div><br>
 
-<h2>Ships</h2>
-<% @ships.each do |ship| %>
-<div class="course">
-<p>Name: <%= ship.name %></p><br>
-<p>Type: <%= ship.type %></p><br>
-<p>Booty: <%= ship.booty %></p><br>
+<h2>Members</h2>
+<% @members.each do |member| %>
+<div class="member">
+<p>Name: <%= member.name %></p><br>
+<p>power: <%= member.power %></p><br>
+<p>bio: <%= member.bio %></p><br>
 </div><br>
 <% end %>
