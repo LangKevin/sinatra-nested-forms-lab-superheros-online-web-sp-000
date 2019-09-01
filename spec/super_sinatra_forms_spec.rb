@@ -32,7 +32,7 @@ describe App do
       click_button 'submit'
 
       expect(page).to have_text("Team Ruby")
-      expect(page).to have_text("Team Motto: We love Ruby!")
+      # expect(page).to have_text("Team Motto: We love Ruby!")
       expect(page).to have_text("Hero Name: Amanda")
       expect(page).to have_text("Hero Power: Ruby")
       expect(page).to have_text("Hero Biography: I love Ruby!")
