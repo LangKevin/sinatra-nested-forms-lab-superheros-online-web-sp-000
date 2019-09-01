@@ -5,7 +5,7 @@ class Member
 
   def initialize(params)
     @name = params[:name]
-    @motto = params[:power]
+    @power= params[:power]
     @bio = params[:bio]
     @@MEMBERS << self
   end
