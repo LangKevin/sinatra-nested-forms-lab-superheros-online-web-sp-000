@@ -1,16 +1,15 @@
 class Team
   attr_reader :name, :motto
 
-  @@PIRATES = []
+  @@TEAMS = []
 
   def initialize(params)
     @name = params[:name]
-    @weight = params[:weight]
-    @height = params[:height]
-    @@PIRATES << self
+    @motto = params[:motto]
+    @@TEAMS << self
   end
 
   def self.all
-    @@PIRATES
+    @@TEAMS
   end
 end
