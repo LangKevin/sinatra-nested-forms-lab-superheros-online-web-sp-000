@@ -10,7 +10,7 @@ require './environment'
      get '/new' do
        erb :'pirates/new'
      end
-     post '/pirates' do
+     post '/teams' do
        @pirate = Pirate.new(params[:pirate])
        params[:pirate][:ships].each do |details|
          Ship.new(details)
