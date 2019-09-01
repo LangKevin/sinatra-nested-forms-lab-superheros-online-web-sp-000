@@ -17,7 +17,7 @@ require './environment'
        end
        @ships = Ship.all
 
-       erb :'pirates/show'
+       erb :'team'
      end
   end
 # end
