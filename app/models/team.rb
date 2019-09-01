@@ -1,5 +1,5 @@
-class Pirate
-  attr_reader :name, :weight, :height
+class Team
+  attr_reader :name, :motto
 
   @@PIRATES = []
 
