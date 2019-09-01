@@ -11,7 +11,7 @@ class App < Sinatra::Base
        erb :'pirates/new'
      end
      post '/teams' do
-       binding.pry
+      #  binding.pry
        @team = Team.new(params[:team])
        params[:team][:members].each do |details|
          Member.new(details)
