@@ -5,7 +5,7 @@ require './environment'
 
     # code other routes/actions here
     get '/' do
-       erb :root
+       erb :super_hero
      end
      get '/new' do
        erb :'pirates/new'
